@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppConselhos.View.PaginaConselho">
+             x:Class="AppConselhos.View.PaginaConselho"
+             BackgroundColor="LightSlateGray">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Conselho" FontSize="Title" 
+                   TextColor="Black" FontAttributes="Bold"
+                   HorizontalOptions="Center" Margin="35"/>
+            <Frame BackgroundColor="AliceBlue">
+                <StackLayout>
+                <Label Text="ID" FontSize="Medium" 
+                   TextColor="Black" FontAttributes="Bold"
+                   HorizontalOptions="Start"/>
+            <Label Text="ID" FontSize="Subtitle" 
+                   TextColor="Black" FontAttributes="Bold"
+                   HorizontalOptions="Start" />
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

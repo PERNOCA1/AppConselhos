@@ -10,7 +10,7 @@ namespace AppConselhos
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new View.PaginaConselho();
         }
 
         protected override void OnStart()
