@@ -7,17 +7,23 @@
         <StackLayout>
             <Label Text="Conselho" FontSize="Title" 
                    TextColor="Black" FontAttributes="Bold"
-                   HorizontalOptions="Center" Margin="35"/>
+                   HorizontalOptions="Center" Margin="0,50,0,20"/>
             <Frame BackgroundColor="AliceBlue">
                 <StackLayout>
-                <Label Text="ID" FontSize="Medium" 
+                <Label Text="ID" FontSize="Title" 
                    TextColor="Black" FontAttributes="Bold"
                    HorizontalOptions="Start"/>
-            <Label Text="ID" FontSize="Subtitle" 
+                <Label Text="ID" FontSize="Subtitle" 
                    TextColor="Black" FontAttributes="Bold"
                    HorizontalOptions="Start" />
                 </StackLayout>
             </Frame>
+            <Entry x:Name="ent_Num" Placeholder="80" PlaceholderColor="DarkGray"
+                   HorizontalTextAlignment="Center" Margin="100,50,100,0"
+                   Keyboard="Numeric"/>
+
+            <Button Text="Conselho" HorizontalOptions="Center"
+                    Padding="20" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

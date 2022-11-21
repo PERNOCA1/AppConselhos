@@ -16,5 +16,10 @@ namespace AppConselhos.View
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

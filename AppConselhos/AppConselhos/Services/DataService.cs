@@ -11,5 +11,15 @@ namespace AppConselhos.Services
 {
     class DataService
     {
+        public static async Task<Conselho> GetAdviceRamdom()
+        {
+            string url = "https://api.adviceslip.com/advice";
+            dynamic result = await 
+
+            return null;
+        }
+
+        public static async Task<Conselho> getDataFromService() {
+            return null; }
     }
 }
