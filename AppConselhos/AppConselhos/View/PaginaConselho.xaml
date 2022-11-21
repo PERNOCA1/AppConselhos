@@ -7,15 +7,14 @@
         <StackLayout>
             <Label Text="Conselho" FontSize="Title" 
                    TextColor="Black" FontAttributes="Bold"
-                   HorizontalOptions="Center" Margin="0,50,0,20"/>
-            <Frame BackgroundColor="AliceBlue">
+                   HorizontalOptions="Center" Margin="0,0,0,30"/>
+            <Frame BackgroundColor="White">
                 <StackLayout>
-                <Label Text="ID" FontSize="Title" 
+                <Label Text="{Binding Id}" FontSize="Title" 
                    TextColor="Black" FontAttributes="Bold"
                    HorizontalOptions="Start"/>
-                <Label Text="ID" FontSize="Subtitle" 
-                   TextColor="Black" FontAttributes="Bold"
-                   HorizontalOptions="Start" />
+                <Label Text="{Binding DicaDoDica}" FontSize="Subtitle" 
+                   TextColor="Black"  />
                 </StackLayout>
             </Frame>
             <Entry x:Name="ent_Num" Placeholder="80" PlaceholderColor="DarkGray"
