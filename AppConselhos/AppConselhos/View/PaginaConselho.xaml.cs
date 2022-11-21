@@ -19,6 +19,14 @@ namespace AppConselhos.View
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
 
         }
     }
