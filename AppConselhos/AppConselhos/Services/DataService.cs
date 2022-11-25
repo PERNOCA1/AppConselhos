@@ -50,11 +50,14 @@ namespace AppConselhos.Services
             string url = "https://api.adviceslip.com/advice/" + Num;
             dynamic result = await getDataFromService(url).ConfigureAwait(false);
 
+            //Console.WriteLine(result["slip"]);
+
             if (result["slip"] != null)
             {
                 Conselho advices = new Conselho();
                 advices.Id = (string)result["slip"]["id"];
                 advices.DicaDoDia = (string)result["slip"]["advice"];
+
                 return advices;
             }
             else

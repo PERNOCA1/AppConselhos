@@ -16,19 +16,36 @@ namespace AppConselhos.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PaginaConselho : ContentPage
     {
+
+
+        Conselho advice = new Conselho();
+
+
         public async void Default()
         {
-            Conselho advice = await DataService.GetAdviceByNum("69");
+            advice = await DataService.GetAdviceByNum("69");
+
+            Console.WriteLine("________________________________");
+            Console.WriteLine(advice.Id);
+            Console.WriteLine(advice.DicaDoDia);
+            Console.WriteLine("________________________________");
+
             this.BindingContext = advice;
+
+            Conselho teste = this.BindingContext as Conselho;
+
+            Console.WriteLine("________________________________");
+            Console.WriteLine(teste.Id);
+            Console.WriteLine(teste.DicaDoDia);
+            Console.WriteLine("________________________________");
         }
         public PaginaConselho()
         {
             InitializeComponent();
 
-            this.BindingContext = new Conselho();
             Default();
 
-
+            this.BindingContext = advice;
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

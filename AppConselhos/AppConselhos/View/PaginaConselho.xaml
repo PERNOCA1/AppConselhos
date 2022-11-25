@@ -10,10 +10,10 @@
                    HorizontalOptions="Center" Margin="0,0,0,30"/>
             <Frame BackgroundColor="White">
                 <StackLayout>
-                <Label Text="{Binding Id}" FontSize="Title" 
+                    <Label Text="{Binding Id}" FontSize="Title" 
                    TextColor="Black" FontAttributes="Bold"
                    HorizontalOptions="Start"/>
-                <Label Text="{Binding DicaDoDica}" FontSize="Subtitle" 
+                    <Label Text="{Binding DicaDoDia}" FontSize="Subtitle" 
                    TextColor="Black"  />
                 </StackLayout>
             </Frame>
